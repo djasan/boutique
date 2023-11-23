@@ -11,6 +11,16 @@ const App = () => {
       'articles': articles
     }
   )
+  const decrementeQte=(id)=>{
+//state.articles[id.qte--:]
+//option 1: 
+let articlesTmp = state.articles;
+articlesTmp[id].qte--;
+setState({
+  'articles':articlesTmp
+})
+
+  }
   return (
     <>
     <header></header>
